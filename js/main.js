@@ -8,7 +8,7 @@ console.log(replaceCSSComments('код /*к1*/ без /* к2 */ коммент/*
 console.log('----------------------------');
 
 function replaceHTMLComments(str) {
-  return str.replace(/<!--.+?-->>*?\s?/gm, '');
+  return str.replace(/<!--.+?-->>*?\s?/gm, '').trim();
 };
 
 console.log(replaceHTMLComments('<!--коммент1--> код без комментов <!--коммент2-->'));
